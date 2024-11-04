@@ -1,17 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
+import TranslatedLyrics from "../components/TranslatedLyrics";
 
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <header>
-        
+        <div className="list-inside list-decimal text-sm text-center sm:text-centre font-[family-name:var(--font-geist-mono)]">
+          <p className="mb-2">Have a guess</p>
+        </div>
       </header>
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <div className="list-inside list-decimal text-sm text-center sm:text-centre font-[family-name:var(--font-geist-mono)]">
-          <p className="mb-2">
-            Have a guess
-          </p>
+          <TranslatedLyrics/>
         </div>
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <Link
