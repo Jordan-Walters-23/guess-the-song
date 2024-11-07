@@ -16,7 +16,7 @@ export default async function TranslatedLyrics() {
     headers: headersList,
   });
 
-  let data = await response.text();
-  return data;
-  
+  let data = await response.json();
+  let translatedText = data.translations[0].text;
+  return translatedText
 }
