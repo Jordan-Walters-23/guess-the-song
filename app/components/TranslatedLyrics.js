@@ -18,4 +18,5 @@ export default async function TranslatedLyrics() {
 
   let data = await response.text();
   return data;
+  
 }
